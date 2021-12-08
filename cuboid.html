@@ -48,19 +48,34 @@
 							
 								<div class="box alt">
 									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/cuboidopengl.png" alt="" /></span></div>
+										<div class="col-12"><span class="image fit"><img src="images/cuboid.png" alt="" /></span></div>
 									</div>
 								</div>
 
 								<h3>Passion Project</h3>
-								<p>In my spare time, I work on a revision of my original S2D project named <i>Cuboid</i>. Cuboid is a 3D game written with OpenGL.</p>
+								<p>I am working on a 3D game named <i>Cuboid</i>, running on an engine written with <b>C++</b> and rendered in <b>OpenGL</b>. It is a revision of an assignment I worked on two years ago, in which I created a basic 2D game of similar nature.</p>
 								
 								<p>I have learned more than any of my other assignments through the ongoing development of this passion project. I have studied and implemented features like an Entity-Component-System architecture that have enhanced both my project and my knowledge immensely.</p>
 								
-								<p>Right now I am working on the physics and collision systems of the project. I have recently completed decoupling the physics updates from the rendering updates in order to allow physics to run at a fixed timestep separate from the rendering framerate; I accomplished this by enabling the physics updates to run a variable number of times between each frame update.</p>
+								<p>Cuboid's engine has many features:
+									<ul>
+										<li>Rudimentary 3D physics, decoupled from the rendering loop with a <b>fixed timestep</b></li>
+										<li><b>Event sending/receiving</b> between event listeners</li>
+										<li>Model loading with <b>specular and emission mapping</b> support</li>
+										<li>Scene saving/loading</li>
+										<li>Complex <b>narrow-phase collision detection</b> via the <i>Separating Axis Theorem</i></li>
+										<li><b>Broad-phase collision detection</b> via construction of an <b>octree</b></li>
+										<li>Character controllers to allow for player and AI movement and behaviour</li>
+									</ul>
+								</p>
+								
+								<h3>Probelms & Solutions</h3>
+								<p>In the past I faced adversity decoupling the physics updates from the rendering updates in order to allow physics to run at a fixed timestep separate from the rendering framerate; I accomplished this by enabling the physics updates to run a variable number of times between each frame update.</p>
 								
 								<p>To solve the issue of jittery movement this change brought on, I also developed movement interpolation to allow for smooth visual movement of characters when physics were updated more than once between two frames.</p>
 
+								<h3>Current Goals</h3>
+								<p>The current task in Cuboid's development is the implementation of <b>Lua scripting</b> systems to allow for easy-to-create complex entity behaviour.</p>
 							</div>
 						</section>
 					</article>
